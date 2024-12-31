@@ -1,6 +1,6 @@
 package day1231.operator;
 
-public class ConditionalTest {
+public class OperatorTestEx01 {
     public static void main(String[] args) {
         // 삼항 연산자(조건 연산자)
         // 조건?true 일때 값 : false 일때 값

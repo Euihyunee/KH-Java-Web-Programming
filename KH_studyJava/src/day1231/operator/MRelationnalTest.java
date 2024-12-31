@@ -1,4 +1,4 @@
-package operator;
+package day1231.operator;
 
 public class MRelationnalTest {
     public static void main(String[] args) {
