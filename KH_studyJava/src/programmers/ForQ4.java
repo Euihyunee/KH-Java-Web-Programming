@@ -1,4 +1,4 @@
-package loops;
+package programmers;
 
 public class ForQ4 {
     public static void main(String[] args) {
