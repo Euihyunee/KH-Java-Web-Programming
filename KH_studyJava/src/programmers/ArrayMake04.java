@@ -1,18 +1,18 @@
-package array;
+package programmers;
 
 import java.util.ArrayList;
 
 public class ArrayMake04 {
     public static void main(String[] args) {
         int[] arr = {1,4,2,5,3};
-        Solution solution = new Solution();
+        Solution4 solution = new Solution4();
         int[] stk = solution.solution(arr);
         for (int i = 0; i < stk.length; i++) {
             System.out.print(stk[i]);
         }
     }
 }
-class Solution {
+class Solution4 {
     public int[] solution(int[] arr) {
 
         ArrayList<Integer> list = new ArrayList<>();
