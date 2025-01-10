@@ -22,14 +22,19 @@ public class ReaderWriterTest {
         // InputStreamReader는 추상 Reader를 상속받음
         // BufferedReader 생성자에는 Reader(System.in) 필요
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         Post post = new Post();
-        System.out.print("타이틀 입력: ");
-        post.title = br.readLine();
-        System.out.print("내용 입력: ");
-        post.content = br.readLine();
-        br.close();
+
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))){
+            System.out.print("제목 입력: ");
+            post.title = br.readLine();
+            System.out.print("내용 입력: ");
+            post.content = br.readLine();
+        } catch (Exception e) {
+            System.out.println("입력장치가 정확하지 않음!");
+        }
+
         System.out.println("title: " + post.title);
         System.out.println("content: " + post.content);
+        System.out.print("타이틀 입력: ");
     }
 }
