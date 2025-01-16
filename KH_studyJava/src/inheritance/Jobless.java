@@ -1,6 +1,10 @@
 package inheritance;
 
-public class Jobless extends Person{ }
+public class Jobless extends Person{
+    public Jobless(String name) {
+        super(name);
+    }
+}
 
 
 interface AAA{}

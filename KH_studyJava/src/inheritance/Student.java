@@ -8,13 +8,20 @@ import lombok.Setter;
 // IS-A 관계
 // Student는 Person이다.
 public class Student extends Person {
-    private long studentNo;
+    private long stdNo;
     private String school;
 
-    @Override
-    public void print(){
-        System.out.println("Student No: " + studentNo);
-        System.out.println("School: " + school);
-        super.print();
+    public Student() {
+        super("이름란");
+    }
+    public Student(String name) {
+        super(name);
+    }
+
+    void display(){
+        System.out.println(stdNo);
+        System.out.println(school);
+        System.out.println(super.getName());
+        System.out.println(super.getAge());
     }
 }
